@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quiz Answer Finder — Options</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main>
+    <h1>Quiz Answer Finder — Options</h1>
+    <p>Store your OpenAI API key securely for the extension to use.</p>
+
+    <div class="row">
+      <label for="apiKey">OpenAI API Key</label>
+      <input id="apiKey" type="password" placeholder="sk-..." autocomplete="new-password" />
+    </div>
+
+    <div class="row small">
+      <span>Current key: <strong id="masked">(loading...)</strong></span>
+    </div>
+
+    <div class="buttons">
+      <button id="saveBtn">Save Key</button>
+      <button id="pasteBtn" class="secondary">Paste from clipboard</button>
+      <button id="removeBtn" class="danger">Remove Key</button>
+    </div>
+
+    <div id="status" aria-live="polite"></div>
+
+    <footer>
+      <small>Note: The key is stored in your browser's extension storage and is not committed to this repository.</small>
+    </footer>
+  </main>
+
+  <script src="options.js"></script>
+</body>
+</html>
