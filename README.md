@@ -11,6 +11,12 @@ Works by injecting a content script (`content.js`) on all pages. A popup (`popup
 - Sends a concise prompt to the OpenAI Chat Completions endpoint and expects a single option as the reply.
 - Highlights the matching option visually using CSS in `styles.css` and automatically clicks it after a short delay.
 
+## Screenshots
+<img width="1920" height="1017" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/05511b6c-fc16-4d8e-ae20-4db1babc4377" />
+<img width="1920" height="1018" alt="Screenshot (6)" src="https://github.com/user-attachments/assets/26177f54-9dd6-4bba-b78c-86c2769f05cb" />
+<img width="1919" height="968" alt="image" src="https://github.com/user-attachments/assets/f074ddbe-0cdf-4682-be9e-25b3180765d5" />
+
+
 ## Files of interest
 - `manifest.json` — extension manifest (MV3). Declares permissions, content scripts, popup and options pages.
 - `content.js` — main runtime logic: finds questions/options, sends prompt to OpenAI, highlights and auto-clicks the returned answer.
